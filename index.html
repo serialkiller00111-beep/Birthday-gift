@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ehtasham</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+text-align:center;
+background:rgba(255,255,255,.2);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 0 20px rgba(0,0,0,.2);
+animation:fadeIn 2s;
+}
+
+h1{
+color:white;
+font-size:38px;
+margin-bottom:10px;
+}
+
+p{
+color:white;
+font-size:18px;
+margin-bottom:15px;
+}
+
+img{
+width:250px;
+height:320px;
+object-fit:cover;
+border-radius:20px;
+border:5px solid white;
+box-shadow:0 0 20px pink;
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#ff4081;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday Ehtasham 🎉</h1>
+
+<p>
+May Allah bless you with happiness, success, good health and endless smiles. Ameen 🤍
+</p>
+
+<img src="ehtasham.jpg" alt="Ehtasham">
+
+<button onclick="surprise()">🎁 Open Surprise</button>
+
+</div>
+
+<script>
+function surprise(){
+alert("🎉 Happy Birthday Ehtasham! May Allah always keep you smiling. 🤍");
+}
+  <div id="balloons"></div>
+
+<style>
+#balloons::before{
+content:"🎈 🎈 🎈 🎈 🎈 🎈";
+position:fixed;
+left:0;
+bottom:-20px;
+width:100%;
+font-size:35px;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-120vh);}
+}
+</style>
+</script>
+
+</body>
+</html>
